@@ -1,11 +1,11 @@
 <template>
   <div class="page">
     <simple-header title="my-vum" :back-link="true"></simple-header>
-    <content>
+    <page-content>
       <div class="content-padded">
         <h1>Hello Vum!</h1>
       </div>
-    </content>
+    </page-content>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ import Content from '../../node_modules/vum/src/components/content'
 export default {
   components: {
     Page,
-    Content,
+    'page-content': Content,
     SimpleHeader
   }
 }

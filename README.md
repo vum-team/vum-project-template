@@ -1,5 +1,9 @@
 # my-vum-project
 
+*already update to VUM@V2.0.0
+
+This is a seed app for vum
+
 > A Vue.js project
 
 ## Build Setup

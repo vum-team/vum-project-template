@@ -10,18 +10,19 @@ import Index from './components/Index'
 Vue.use(Router)
 Vue.use(Vum)
 
-let App = Vue.extend()
-
-let router = new Router()
-
-router.map({
-  '/': {
-    name: 'index',
-    component: Index
-  }
+let router = new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'index',
+      component: Index
+    }
+  ]
 })
 
-router.start(App, '#app')
+new Vue({
+  router
+}).$mount('#app')
 
 Vum.router(router)  // config router by vum
 
